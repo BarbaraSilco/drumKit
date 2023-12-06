@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+	background: linear-gradient(-45deg, #353535, #232323, #0e0e0e, #000000);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.main {
+    height: 600px;
+    width: 750PX;
+    background-color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-image: url(./drum-kit.png);
+    background-size: cover;
+    
+
+    
+}
+
+.main .header {
+    padding: 50px;
+    text-align: center;
+    color: #666565;
+    font-family: 'Monomaniac One', sans-serif;
+}
+
+.drumstick {
+    width: 50px;
+    color: #232323;
+}
+
+.set {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.w {
+  background-image: url(./images/crash.png);
+  background-size: cover;
+
+}
+
+.a {
+  background-image: url(./images/kick.png);
+  background-size: cover;
+
+}
+
+.s {
+  background-image: url(./images/snare.png);
+  background-size: cover;
+
+}
+
+.d {
+  background-image: url(./images/tom4.png);
+  background-size: cover;
+
+}
+
+.j {
+  background-image: url(./images/tom1.png);
+  background-size: cover;
+
+}
+
+.k {
+  background-image: url(./images/tom2.png);
+  background-size: cover;
+
+}
+
+.l {
+
+  background-image: url(./images/tom3.png);
+  background-size: cover;
+
+
+}
+
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+
+.drum {
+  outline: none;
+  border: none;
+  border: 5px solid #242424;
+  font-size: 3rem;
+  font-family: 'Monomaniac One', sans-serif;
+  color:#666565;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 10px;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 5px;
+  background-color: #666565;
+}
+
+.sound {
+    font-size: 10px;
+    text-align: center;
+}
